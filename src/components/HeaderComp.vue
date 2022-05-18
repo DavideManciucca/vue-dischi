@@ -1,13 +1,27 @@
 <template>
   <div class="header">
     <div><img src="" alt="">logo</div>
-    <div> <input placeholder="Cerca qui il tuo brano!!" type="text"> </div>
+    <div> 
+      <form>
+      <select v-model="selected" name="" id="">
+        <option value="All">All</option>
+        <option value="Rock">Rock</option>
+        <option value="Pop">Pop</option>
+        <option value="Jazz">Jazz</option>
+        <option value="Metal">Metal</option>
+      </select>
+      </form>
+    </div>
   </div>
 </template>
 
 <script>
+
 export default {
-  name:'HeaderComp'
+  name:'HeaderComp',
+  data(){
+      
+  }
 }
 </script>
 

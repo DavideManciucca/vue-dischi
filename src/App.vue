@@ -1,21 +1,21 @@
 <template>
   <div >
     <div class="container-fluid">
-    <HeaderComp />
+    <!-- <HeaderComp /> -->
     <MainComp />
     </div>
   </div>
 </template>
 
 <script>
-import HeaderComp from '@/components/HeaderComp';
+// import HeaderComp from '@/components/HeaderComp';
 import MainComp from '@/components/MainComp';
 
 
 export default {
   name: 'App',
   components: {
-   HeaderComp,
+  //  HeaderComp,
    MainComp
   }
 }
