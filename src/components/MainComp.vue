@@ -3,13 +3,16 @@
   <SelectComp 
   @changedGenre="searchGeneri"
   />
- 
+  <div class="dm-wrapper">
   <div class="dm-container">
     <TracklistComp 
     v-for="(track, index) in generiFiltrati" :key="index"
     :trackValue="track"
     />
-  </div></div>
+  </div>
+  </div>
+
+  </div>
 </template>
 
 <!--
@@ -100,7 +103,11 @@ export default {
   flex-wrap: wrap;
  justify-content: center;
  background-color: #1e2d3b;
- height: 100vh;
+ min-height: 100%;
+}.dm-wrapper{
+  min-height: 100vh;
+ background-color: #1e2d3b;
+
 }
 
 </style>
